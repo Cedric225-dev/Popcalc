@@ -8,19 +8,8 @@ function SubmitInfo(){
     var bookmarks = document.forms["orderForm"]["Bookmarks"].value;
     var age = (years * 365) + (months * 30) + days;
 
-    let profile = {
-      "Name" : name,
-      "Viewcount" : viewcount,
-      "Age" : age,
-      "Bookmarks" : bookmarks
-    }
-    if (!profiles){
-      let profiles = {profile}
-      var namelist = [name];
-    }else{
-      profiles.push(profile);
-      namelist.push(name);
-    }
+    var viewsperday = Math.round(age / viewcount);
+    var bookmarkpercent = (bookmarks / viewcount) * 100;
 
-    document.getElementById("Nameoutput").innerHTML = "You have input information for "+namelist;
+    alert(name+"'s results are "+viewsperday+" views per day, with "+bookmarkpercent+"% of bookmarks.");
   }
