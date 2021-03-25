@@ -6,7 +6,6 @@ function SubmitInfo(){
     var months = document.forms["orderForm"]["Months"].value;
     var years = document.forms["orderForm"]["Years"].value;
     var bookmarks = document.forms["orderForm"]["Bookmarks"].value;
-
     var age = (years * 365) + (months * 30) + days;
 
     let profile = {
@@ -17,8 +16,11 @@ function SubmitInfo(){
     }
     if (!profiles){
       let profiles = {profile}
+      var namelist = [name];
     }else{
       profiles.push(profile);
+      namelist.push(name);
     }
 
+    document.getElementById("Nameoutput").value = "You have input information for "+namelist;
   }
