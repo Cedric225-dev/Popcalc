@@ -22,5 +22,5 @@ function SubmitInfo(){
       namelist.push(name);
     }
 
-    document.getElementById("Nameoutput").value = "You have input information for "+namelist;
+    document.getElementById("Nameoutput").innerHTML = "You have input information for "+namelist;
   }
