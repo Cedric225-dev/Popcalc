@@ -1,0 +1,46 @@
+<html>
+<head>
+ <title>Pop calc</title>
+ <link rel="stylesheet" href="default.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+</br>
+</br>
+<form name="orderForm" onsubmit="return ProcessInfo();" method="post">
+<table>
+  <tr>
+                  <th colspan="3">Parameter input</th>
+              </tr>
+              <tr>
+                  <td>Name</td>
+                  <td><input type="text" name="name" id="name" size="40"></td>
+              </tr>
+              <tr>
+                  <td>View count</td>
+                  <td><input type="text" name="viewcount" id="viewcount" size="6"></td>
+              </tr>
+              <tr>
+                  <td>Age</td>
+
+                  <tr><td>Days <input type="text" name="days" id="Days" size="2"></td></tr>
+                  <tr><td>Months <input type="text" name="days" id="Months" size="2"></td></tr>
+                  <tr><td>Years <input type="text" name="days" id="Years" size="2"></td></tr>
+
+              </tr>
+              <tr>
+                  <td>Bookmarks</td>
+                  <td><input type="text" name="bookmarks" id="bookmarks" size="6"></td>
+              </tr>
+
+</table>
+</br>
+<input type="submit" name="btnSubmit" id="btnSubmit" value="Calculate">
+<input type="submit" name ="btnInput" id="btnInput" value="Input data">
+<input type="reset" name="btnReset" id="btnReset" value="Clear">
+</form>
+</br>
+<h2 id="Result"></h>
+<script src="code.js"></script>
+</body>
+</html>
