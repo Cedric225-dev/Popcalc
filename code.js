@@ -6,9 +6,19 @@ function SubmitInfo(){
     var months = document.forms["orderForm"]["Months"].value;
     var years = document.forms["orderForm"]["Years"].value;
     var bookmarks = document.forms["orderForm"]["Bookmarks"].value;
-    var age = (years * 365) + (months * 30) + days;
+    var age = 0;
 
-    var viewsperday = Math.round(age / viewcount);
+    if(days >= 1){
+      age += Number(days);
+    }
+    if(months >= 1){
+      age += Number(months * 30);
+    }
+    if(years >= 1){
+      age += Number(years * 365);
+    }
+  //  alert(age);
+    var viewsperday = Math.round(Number(viewcount) / Number(age));
     var bookmarkpercent = (bookmarks / viewcount) * 100;
 
     alert(name+"'s results are "+viewsperday+" views per day, with "+bookmarkpercent+"% of bookmarks.");
