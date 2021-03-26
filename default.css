@@ -1,15 +1,18 @@
 h1, h2, h3, p, div, body{
-	margin: 25px;
-	padding: 25px;
-	border: 25px;
-}
 
+}
+form{
+	font-family: verdana, helvetica;
+	margin: 10px;
+	padding: 10px;
+	border: 10px;
+}
 
 table {
   table-layout: fixed ;
   width: 15% ;
 }
-th, td {
+th, td, tr {
   width: 25% ;
   padding: 10px;
 }
