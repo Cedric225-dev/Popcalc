@@ -2,14 +2,12 @@
 A simple browser-based calculator based on views, bookmarks and age.
 
 
-TODO:
+HOW TO USE:
 
-1: Get data entry working, have a dynamic text block confirm to the user their entries, listing the names of input data sets.
+1: Input a name to identify your character (Doesn't actually affect anything)
 
-2: Set it up so that the user may input the form multiple times. Each time they input, add to a growing array of the value sets.
+2: Input view count, age of the profile and number of Bookmarks
 
-3: Once the hits some sort of 'display' button, run the math and output a list of the input names and intended calculations.
+3: Press 'Input', an alert pop-up will come up with the input name, views-per-day and bookmark-to-viewer percentage.
 
-4: Make this look like not shit
-
-5: Basic input validation
+4: After you close this alert, you will get an error 405 message. This is normal, simply hit f5/refresh to use it again.
