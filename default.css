@@ -1,5 +1,4 @@
 h1, h2, h3, p, div, body{
-
 }
 form{
 	font-family: verdana, helvetica;
@@ -14,5 +13,8 @@ table {
 }
 th, td, tr {
   width: 25% ;
-  padding: 10px;
+	height: 50%;
+	margin: 10px;
+	padding: 10px;
+	border: 10px;
 }
